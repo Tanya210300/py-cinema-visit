@@ -21,7 +21,10 @@ from app.main import cinema_visit
             "Cleaner Anna is cleaning hall number 1.\n",
         ),
         (
-            [{"name": "Bob", "food": "Coca-cola"}, {"name": "Alex", "food": "popcorn"}],
+            [
+                {"name": "Bob", "food": "Coca-cola"},
+                {"name": "Alex", "food": "popcorn"},
+            ],
             5,
             "Anna",
             "Madagascar",
