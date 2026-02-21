@@ -5,10 +5,7 @@ from app.people.customer import Customer
 
 
 def cinema_visit(
-        movie: str,
-        customers: list,
-        hall_number: int,
-        cleaner: str
+    movie: str, customers: list, hall_number: int, cleaner: str
 ) -> None:
     if isinstance(movie, list):
         movie, customers, hall_number, cleaner = (
@@ -18,8 +15,8 @@ def cinema_visit(
             hall_number,
         )
     customer_instances = [
-    Customer(name=customer["name"], food=customer["food"])
-    for customer in customers
+        Customer(name=customer["name"], food=customer["food"])
+        for customer in customers
     ]
 
     for customer in customer_instances:
